@@ -195,6 +195,34 @@ main {
 
 }
 
+//Skills page
+#skills {
+    background: lighten($primary-color, 5);
+}
+
+.skills-classification {
+    font-size: 31px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    padding: 0.2rem 1rem;
+    background: darken($secondary-color, 25);
+}
+
+.skills-section {
+    display: grid;
+    grid-gap: 50px;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    .skills-logo {
+
+        height: 80px;
+
+
+    }
+}
+
 //Work/Projects
 .projects {
     display: grid;

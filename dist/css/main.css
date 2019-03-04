@@ -231,6 +231,23 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
 
+#skills {
+  background: #1e1e1e; }
+
+.skills-classification {
+  font-size: 31px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 0.2rem 1rem;
+  background: #045f83; }
+
+.skills-section {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(4, 1fr); }
+  .skills-section .skills-logo {
+    height: 80px; }
+
 .projects {
   display: grid;
   grid-gap: 30px;
@@ -300,7 +317,9 @@ main {
   main .pretty-html {
     font-size: 3vw; }
   main .css-typing {
-    width: 45%; } }
+    width: 45%; }
+  .skills-section {
+    grid-template-columns: repeat(5, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -308,7 +327,9 @@ main {
   .lg-heading {
     font-size: 5rem; }
   .projects img {
-    height: 220px; } }
+    height: 220px; }
+  .skills-section {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -344,7 +365,9 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
     .projects img {
-      height: 200px; } }
+      height: 200px; }
+  .skills-section {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -368,4 +391,9 @@ main {
     .projects img {
       height: 250px; }
   .boxes > div {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .skills-classification {
+    font-size: 22px; }
+  .skills-section {
+    margin-left: 40%;
+    grid-template-columns: repeat(1, 1fr); } }

@@ -29,6 +29,10 @@
 
     }
 
+    .skills-section {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
 
 }
 
@@ -46,6 +50,10 @@
         img {
             height: 220px;
         }
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -112,6 +120,10 @@
             height: 200px;
         }
     }
+
+    .skills-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 // Smartphones
@@ -156,6 +168,16 @@
 
     .boxes>div {
         font-size: 1.2rem;
+    }
+
+    .skills-classification {
+        font-size: 22px;
+
+    }
+
+    .skills-section {
+        margin-left: 40%;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
