@@ -559,9 +559,11 @@ textarea {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 5rem; }
+      font-size: 2.5rem; }
     main .sm-heading {
       margin-left: 0; }
+    main .css-typing {
+      width: 100%; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -592,12 +594,12 @@ textarea {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 2rem; }
+    padding: 1.9rem; }
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
-      font-size: 2.2rem; }
+      font-size: 2.1rem; }
     main .sm-heading {
       font-size: 1.5rem;
       margin-left: 0; }

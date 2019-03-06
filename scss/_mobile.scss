@@ -66,12 +66,16 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
-            font-size: 5rem;
+            font-size: 2.5rem;
 
         }
 
         .sm-heading {
             margin-left: 0;
+        }
+
+        .css-typing {
+            width: 100%;
         }
 
     }
@@ -129,7 +133,7 @@
 // Smartphones
 @include mediaSm {
     main {
-        padding: 2rem;
+        padding: 1.9rem;
 
         #home h1 {
             margin-top: 10vh;
@@ -137,7 +141,8 @@
 
         .lg-heading {
             margin-top: 1rem;
-            font-size: 2.2rem;
+            font-size: 2.1rem;
+
         }
 
         .sm-heading {
