@@ -474,7 +474,7 @@ textarea {
     border-radius: 15px;
     display: inline-block;
     background-color: #1a1919;
-    color: white;
+    color: #fff;
     font-size: 18px;
     cursor: pointer;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
@@ -484,9 +484,10 @@ textarea {
 }
 
 .submit-btn:hover {
-    transform: translateY(1px);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
-        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+    transform: translateY(3px);
+
+    background-color: darken($secondary-color, 20);
+
 }
 
 @media (max-width: 768px) {
@@ -498,15 +499,7 @@ textarea {
     }
 }
 
-input[type=checkbox]+label {
-    color: #ccc;
-    font-style: italic;
-}
 
-input[type=checkbox]:checked+label {
-    color: #f00;
-    font-style: normal;
-}
 
 
 //Button Styles
@@ -532,6 +525,29 @@ input[type=checkbox]:checked+label {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #333;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgb(87, 86, 86);
+    background-color: darken($secondary-color, $amount: 35);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: darken($secondary-color, 10);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darken($secondary-color, 25);
 }
 
 
