@@ -15,6 +15,7 @@ $pretty-purple:rgb(180, 22, 180);
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
+            background-repeat: no-repeat;
 
             &:after {
                 content: '';
