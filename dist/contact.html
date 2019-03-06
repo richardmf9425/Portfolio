@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
@@ -56,7 +57,7 @@
     <main id="about">
         <h1 class="lg-heading">Contact<span class="text-secondary"> Me</span> </h1>
         <h2 class="sm-heading">
-            How you can reach me...
+            Let's get in touch...
         </h2>
         <div class="boxes">
             <div>
@@ -66,12 +67,46 @@
             <div>
                 <a href="tel:7862294022"> <span class="text-secondary">Phone:</span> (786) 229-4022</a>
             </div>
-            <div>
-                <span class="text-secondary">Address:</span> None of your business
-            </div>
+
 
         </div>
+        <form action="" name="contact" method="POST" data-netlify="true">
+            <div class="contact-container">
 
+                <div class="row">
+                    <h4 style="text-align:center">I'd love to hear from you!</h4>
+                </div>
+                <div class="row input-container">
+                    <div>
+                        <div class="styled-input wide">
+                            <input type="text" required />
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="styled-input">
+                            <input type="text" required />
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="styled-input" style="float:right;">
+                            <input type="text" required />
+                            <label>Phone Number</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="styled-input wide">
+                            <textarea required></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="submit-btn">Submit</div>
+                    </div>
+                </div>
+            </div>
+        </form>
 
     </main>
 

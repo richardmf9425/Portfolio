@@ -1,11 +1,8 @@
 @import 'config';
 @import 'menu';
 
-
-
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -37,13 +34,11 @@ h3 {
         margin-left: 1.2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, $amount: 2), 0.5);
-
-
     }
 }
 
 .pretty-html {
-    color: rgb(180, 22, 180);
+    color: $pretty-purple;
     font-size: 5vw;
 }
 
@@ -57,13 +52,7 @@ h3 {
     height: 350px;
     width: 350px;
     @include easeOut;
-
-
-
 }
-
-
-
 
 .css-typing {
     width: 70%;
@@ -119,10 +108,6 @@ h3 {
     }
 }
 
-
-
-
-
 a {
     color: #fff;
     text-decoration: none;
@@ -139,9 +124,9 @@ header {
 }
 
 main {
-
     padding: 4rem;
     height: 100%;
+
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -154,7 +139,6 @@ main {
             &:hover {
                 color: $secondary-color;
                 @include easeOut;
-
             }
         }
     }
@@ -172,8 +156,7 @@ main {
 .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas:
-        'bioimage bio bio';
+    grid-template-areas: 'bioimage bio bio';
 
     grid-template-columns: repeat(3, 1fr);
 
@@ -190,9 +173,6 @@ main {
         grid-area: bio;
         font-size: 1.5rem;
     }
-
-
-
 }
 
 //Timeline
@@ -210,8 +190,8 @@ main {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 6px;
-    background-color: rgb(180, 22, 180);
+    width: 4px;
+    background-color: $pretty-purple;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -224,8 +204,6 @@ main {
     position: relative;
     background-color: inherit;
     width: 50%;
-
-
 }
 
 /* The circles on the timeline */
@@ -234,15 +212,17 @@ main {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
-    background: #fff;
+    right: -15px;
+    background-color: #fff;
+    background-size: cover;
     border: 4px solid $secondary-color;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
 
-
 }
+
+
 
 /* Place the container to the left */
 .left {
@@ -284,7 +264,7 @@ main {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -17px;
 }
 
 /* The actual content */
@@ -321,7 +301,7 @@ main {
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        left: 12px;
     }
 
     /* Make all right containers behave like the left ones */
@@ -329,13 +309,6 @@ main {
         left: 0%;
     }
 }
-
-
-
-
-
-
-
 
 //Skills page
 #skills {
@@ -358,10 +331,7 @@ main {
     grid-template-columns: repeat(4, 1fr);
 
     .skills-logo {
-
         height: 80px;
-
-
     }
 }
 
@@ -375,7 +345,6 @@ main {
     img {
         width: 100%;
         height: 350px;
-
 
         border: 3px #fff solid;
 
@@ -396,8 +365,9 @@ main {
     margin-top: 1rem;
 
     div {
-        font-size: 2rem;
-        border: 3px #fff solid;
+        font-size: 1.5rem;
+        border: 1px #fff solid;
+        border-radius: 15px;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
         @include easeOut;
@@ -413,6 +383,129 @@ main {
             }
         }
     }
+}
+
+//contact form 
+/* ///// inputs /////*/
+
+.contact-container {
+    z-index: -1;
+}
+
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .styled-input {
+        width: 100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+}
+
+input:focus~span,
+textarea:focus~span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    float: right;
+    padding: 7px 35px;
+    border: 1px #fff solid;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: #1a1919;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+        0 2px 10px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width: 50%;
+        padding: 7px 10px;
+        float: none;
+        text-align: center;
+    }
+}
+
+input[type=checkbox]+label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input[type=checkbox]:checked+label {
+    color: #f00;
+    font-style: normal;
 }
 
 
@@ -433,7 +526,6 @@ main {
     @extend .btn;
     background: darken($primary-color, 50);
     color: #fff;
-
 }
 
 .btn-light {
@@ -442,14 +534,15 @@ main {
     color: #333;
 }
 
+
+//footer 
 #main-footer {
+    z-index: 1;
     text-align: center;
     padding: 1rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
 }
-
-
 
 @import 'mobile';
