@@ -5,7 +5,8 @@
         grid-template-columns: repeat(4, 1fr);
 
         img {
-            height: 320px;
+            height: 350px;
+
         }
     }
 
@@ -40,17 +41,17 @@
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
+
+        img {
+            height: 250px;
+        }
     }
 
     .lg-heading {
-        font-size: 5rem;
+        font-size: 4vw;
     }
 
-    .projects {
-        img {
-            height: 220px;
-        }
-    }
+
 
     .skills-section {
         grid-template-columns: repeat(4, 1fr);
@@ -134,8 +135,9 @@
 @include mediaSm {
     main {
         padding: 1.9rem;
+        padding-top: 6rem;
 
-        #home h1 {
+        &#home h1 {
             margin-top: 10vh;
         }
 
@@ -146,13 +148,15 @@
         }
 
         .sm-heading {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-left: 0;
         }
 
         .pretty-html {
             font-size: 1.5rem;
         }
+
+
     }
 
     .logo {
@@ -184,6 +188,24 @@
         margin-left: 40%;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .about-info {
+        .bio-image {
+            height: 150px;
+            width: 150px;
+        }
+
+        .bio>p {
+            font-size: 20px;
+        }
+
+
+    }
+
+    .timeline {
+        margin-top: 4rem;
+    }
+
 
 
 }
