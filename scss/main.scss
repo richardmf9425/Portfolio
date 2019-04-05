@@ -15,6 +15,16 @@ body {
     line-height: 1.5;
 }
 
+
+
+
+
+
+
+
+
+
+
 .scroll {
     display: none;
 }
@@ -581,6 +591,24 @@ textarea {
     background: darken($secondary-color, 25);
 }
 
+.top-button {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    padding: 10px;
+    border-radius: 20%;
+    background: $secondary-color;
+    border: 3px solid darken($secondary-color, 40);
+    cursor: pointer;
+    text-decoration: none;
+
+
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
 
 //footer 
 #main-footer {
