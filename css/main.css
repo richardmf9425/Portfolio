@@ -605,12 +605,10 @@ textarea {
       padding: 0;
       background: #1a1a1a;
       list-style: none;
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
-      transition: all 0.3s ease-out; }
+      transition: all 0.3s ease-out;
+      transform: translate3d(0, -100%, 0); }
       .menu-nav.show {
-        clip-path: circle(1500px at 90% -10%);
-        -webkit-clip-path: circle(1500px at 90% -10%); }
+        transform: translate3d(0, 0, 0); }
     .menu .nav-item {
       transform: translate3d(2000px, 0, 0);
       transition: all 0.5s ease-out; }
