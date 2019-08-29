@@ -521,9 +521,10 @@ $color_grey_dark: #a2a2a2;
             text-align: right;
 
             a {
-                color: $secondary-color;
+                color: darken($secondary-color, 1);
                 display: inline-block;
                 position: relative;
+                padding: 10px;
 
                 &:after {
                     content: "\f061";
@@ -847,7 +848,7 @@ textarea {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: darken($secondary-color, 10);
+    background: darken($secondary-color, 25);
 
 }
 
@@ -862,7 +863,7 @@ textarea {
     right: 2%;
     padding: 10px;
     border-radius: 20%;
-    background: $secondary-color;
+    background: darken($secondary-color, 25);
     border: 3px solid darken($secondary-color, 40);
     cursor: pointer;
     text-decoration: none;

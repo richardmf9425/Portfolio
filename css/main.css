@@ -428,9 +428,10 @@ main {
     .blog-card .description .read-more {
       text-align: right; }
       .blog-card .description .read-more a {
-        color: #0eb6f8;
+        color: #09b4f8;
         display: inline-block;
-        position: relative; }
+        position: relative;
+        padding: 10px; }
         .blog-card .description .read-more a:after {
           content: "\f061";
           font-family: FontAwesome;
@@ -644,7 +645,7 @@ textarea {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #0695cd; }
+  background: #045f83; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -656,7 +657,7 @@ textarea {
   right: 2%;
   padding: 10px;
   border-radius: 20%;
-  background: #0eb6f8;
+  background: #045f83;
   border: 3px solid #022938;
   cursor: pointer;
   text-decoration: none; }
