@@ -7,7 +7,7 @@
 
 body {
     @include background;
-    background: $primary-color;
+    background: $third-color;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -336,7 +336,7 @@ main {
 
 //Skills page
 #skills {
-    background: lighten($primary-color, 5);
+    background: $third-color;
 }
 
 .skills-classification {
@@ -345,7 +345,7 @@ main {
     margin-top: 2rem;
 
     padding: 0.2rem 1rem;
-    background: darken($secondary-color, 25);
+    background: darken($secondary-color, 20);
 }
 
 .skills-section {
