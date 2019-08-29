@@ -159,7 +159,7 @@
         &-nav {
             margin: 0;
             padding: 0;
-            background: rgb(26, 26, 26);
+            background: linear-gradient(to right, #141e30, #132131);
             list-style: none;
             // clip-path: circle(100px at 90% -10%);
             // -webkit-clip-path: circle(100px at 90% -10%);
@@ -263,7 +263,7 @@
 
         .sm-heading {
             font-size: 1.2rem;
-            margin-left: 0;
+            margin-left: -10px;
         }
 
         .pretty-html {

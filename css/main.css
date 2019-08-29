@@ -93,7 +93,7 @@ h3 {
   h3.sm-heading {
     font-size: 2.5vw;
     margin-bottom: 2rem;
-    margin-left: 1.2rem;
+    margin-left: 1.1rem;
     padding: 0.2rem 1rem;
     background: rgba(23, 23, 23, 0.3); }
 
@@ -188,7 +188,7 @@ main {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    object-position: 50% -10%;
+    object-position: 50% -3%;
     margin: 0 auto;
     border-radius: 50%;
     border: #0eb6f8 3px solid; }
@@ -764,7 +764,7 @@ textarea {
     .menu-nav {
       margin: 0;
       padding: 0;
-      background: #1a1a1a;
+      background: linear-gradient(to right, #141e30, #132131);
       list-style: none;
       transition: all 0.3s ease-out;
       transform: translate3d(0, -100%, 0); }
@@ -824,7 +824,7 @@ textarea {
       font-size: 2.1rem; }
     main .sm-heading {
       font-size: 1.2rem;
-      margin-left: 0; }
+      margin-left: -10px; }
     main .pretty-html {
       font-size: 1.5rem; }
   .logo {

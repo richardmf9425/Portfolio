@@ -45,7 +45,7 @@ h3 {
     &.sm-heading {
         font-size: 2.5vw;
         margin-bottom: 2rem;
-        margin-left: 1.2rem;
+        margin-left: 1.1rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, $amount: 9), 0.3);
     }
@@ -181,7 +181,7 @@ main {
         width: 200px;
         height: 200px;
         object-fit: cover;
-        object-position: 50% -10%;
+        object-position: 50% -3%;
         margin: 0 auto;
         border-radius: 50%;
         border: $secondary-color 3px solid;
