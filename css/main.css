@@ -88,7 +88,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(to right, #141e30, #243b55);
+  background: linear-gradient(to right, #141e30, #101d2b);
   opacity: 0.9;
 }
 
