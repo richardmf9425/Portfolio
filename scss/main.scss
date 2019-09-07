@@ -468,7 +468,7 @@ $color_grey_dark: #a2a2a2;
         font-size: .9rem;
 
         a {
-            text-decoration: dotted underline;
+            text-decoration: solid underline;
         }
 
         ul li {
@@ -476,20 +476,23 @@ $color_grey_dark: #a2a2a2;
         }
 
         .author:before {
-            font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             margin-right: 10px;
             content: "\f007";
         }
 
         .date:before {
-            font-family: FontAwesome;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             margin-right: 10px;
             content: "\f133";
         }
 
         .tags {
             ul:before {
-                font-family: FontAwesome;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
                 content: "\f02b";
                 margin-right: 10px;
             }
@@ -540,7 +543,8 @@ $color_grey_dark: #a2a2a2;
 
                 &:after {
                     content: "\f061";
-                    font-family: FontAwesome;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
                     margin-left: -10px;
                     opacity: 0;
                     vertical-align: middle;
