@@ -405,6 +405,9 @@ main {
       font-weight: 900;
       margin-right: 10px;
       content: "\f007"; }
+    .blog-card .details a.disabled {
+      pointer-events: none;
+      cursor: default; }
     .blog-card .details .date:before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
